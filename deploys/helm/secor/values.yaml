@@ -5,6 +5,7 @@ image:
   pullPolicy: Always
 
 secor:
+  replicas: 1
   zookeeper:
     quorum: "zookeeper:2181"
     path: "/"

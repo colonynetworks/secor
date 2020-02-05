@@ -15,7 +15,7 @@ spec:
       release: {{ .Release.Name }}
   updateStrategy:
     type: RollingUpdate
-  replicas: 1
+  replicas: {{ .Values.secor.replicas }}
   template:
     metadata:
       annotations:
